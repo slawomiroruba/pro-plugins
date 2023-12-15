@@ -1,8 +1,8 @@
 <?php 
 
-namespace ProformatPlugins\Includes;
+namespace ProformatPlugins;
 
-use ProformatPlugins\Includes\RandomPlugins;
+use ProformatPlugins\RandomPlugins;
 
 class PluginsList {
     public function __construct() {
@@ -20,7 +20,7 @@ class PluginsList {
         });
     }
 
-    private function add_custom_styles() {
+    public function add_custom_styles() {
         wp_enqueue_style( 'custom-styles', plugin_dir_url( __FILE__ ) . 'assets/css/admin.css' );
     }
 

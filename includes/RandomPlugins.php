@@ -1,6 +1,6 @@
 <?php 
 
-namespace ProformatPlugins\Includes;
+namespace ProformatPlugins;
 
 class RandomPlugins {
 

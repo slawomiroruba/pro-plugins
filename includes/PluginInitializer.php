@@ -1,8 +1,8 @@
 <?php 
 // includes/class-plugin-initializer.php
-namespace ProformatPlugins\Includes;
+namespace ProformatPlugins;
 
-use ProformatPlugins\Includes\PluginsList;
+use ProformatPlugins\PluginsList;
 
 class PluginInitializer {
     public function __construct() {
@@ -14,11 +14,11 @@ class PluginInitializer {
         $this->load_plugin();
     }
 
-    private function load_textdomain() {
+    public function load_textdomain() {
         // load_plugin_textdomain( 'pro-plugins', false, PRO_PLUGINS_DIR . '/languages' );
     }
 
-    private function load_plugin() {
+    public function load_plugin() {
         new PluginsList();
     }
 }

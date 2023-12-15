@@ -9,13 +9,9 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 define( 'PRO_PLUGINS_DIR', plugin_dir_path( __FILE__ ) );
 
-use ProformatPlugins\Includes\PluginInitializer;
+use ProformatPlugins\PluginInitializer;
 
 new PluginInitializer();
-
-
-
-
 
 
 
